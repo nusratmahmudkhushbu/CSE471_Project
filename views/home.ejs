@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #472dbb;
+        }
+        .header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .welcome {
+            text-align: center;
+            width: 100%;
+        }
+        .logout {
+            position: absolute;
+            right: 20px;
+        }
+        .logout button {
+            padding: 10px 20px;
+            background-color: #472dbb;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .logout button:hover {
+            background-color: #3a1f91;
+        }
+        .form-container {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #472dbb;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            transition: border-color 0.3s ease;
+        }
+        .form-group input:focus {
+            border-color: #472dbb;
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #472dbb;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .submit-btn:hover {
+            background-color: #3a1f91;
+        }
+        p {
+            margin-top: 15px;
+            text-align: center;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="welcome">
+            <h2>Welcome Home</h2>
+        </div>
+        <div class="logout">
+            <form action="/logout" method="post">
+                <button type="submit">Logout</button>
+            </form>
+            
+        </div>
+    </div>
+</body>
+</html>
