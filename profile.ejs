@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            padding: 20px;
+        }
+        h1 {
+            color: #472dbb;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        .links a {
+            padding: 10px 20px;
+            background-color: #472dbb;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            display: inline-block;
+        }
+        .links a:hover {
+            background-color: #3a1f91;
+        }
+    </style>
+</head>
+<body>
+    <h1>Profile</h1>
+    <p><strong>Name:</strong> <%= user.name %></p>
+    <p><strong>Email:</strong> <%= user.email %></p>
+    <p><strong>Address:</strong> <%= user.address %></p>
+    <p><strong>Phone:</strong> <%= user.phone %></p>
+    <p><strong>Facebook:</strong> <%= user.facebook %></p>
+    <p><strong>Instagram:</strong> <%= user.instagram %></p>
+    <div class="links">
+        <a href="/edit-profile">Edit Profile</a>
+        <a href="/products">Products</a>
+    </div>
+</body>
+</html>
